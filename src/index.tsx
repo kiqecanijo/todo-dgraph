@@ -62,7 +62,7 @@ const App = () => {
 
   const httpLink = new HttpLink({
   // uri: "http://localhost:8080/graphql", // Or your Slash GraphQL endpoint (if you're using Slash GraphQL)
-    uri: 'https://throbbing-field-240031.us-west-2.aws.cloud.dgraph.io/graphql',
+    uri: 'https://blue-surf-590891.us-east-1.aws.cloud.dgraph.io/graphql',
     headers: {
       'X-Auth-Token': token
     }
@@ -70,7 +70,7 @@ const App = () => {
 
   const wsLink = new WebSocketLink({
   // uri: `ws://localhost:8080/graphql`, // Can test with your Slash GraphQL endpoint (if you're using Slash GraphQL)
-    uri: 'wss://throbbing-field-240031.us-west-2.aws.cloud.dgraph.io/graphql',
+    uri: 'wss://blue-surf-590891.us-east-1.aws.cloud.dgraph.io/graphql',
     options: {
       lazy: true,
       reconnect: true,
