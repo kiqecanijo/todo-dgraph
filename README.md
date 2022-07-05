@@ -2,6 +2,21 @@
 
 Deploy it on **Vercel** 👆
 
+## About:
+
+This repo create a simple todo list, creating, updating and deleting **tasks**,
+includes a simple Login from **Auth0**, and subcribe information from backend.
+permissions are manage by **Auth0** too.
+
+Data is stored in **Dgraph**, and manage through **GraphQL**.
+information are **subscribed** and handled into a state manager (**recoil**), this could cause a small response **issue**,
+but simplify the code and show us what is exactly store in the database in **real time**.
+
+Disclaimer 🤔:
+
+- Backend was not pretended to be done, but it was in a simple way.
+- Subscriptions make simple
+
 ## How to run:
 
 ### Using Vercel:
@@ -42,10 +57,6 @@ ant that's it 🎉
 
   ant that's it 🫤
 
-## Disclaimer 🤔:
-
-Backend was not pretended to be done, but it was in a simple way.
-
 ## Features
 
 | _Feature _ | _Status_ |                                                   _Comments_                                                    |
@@ -61,6 +72,7 @@ Backend was not pretended to be done, but it was in a simple way.
 |   Recoil   |    ✅    |                                           Powerfull state manager 💪                                            |
 |    PWA     |   ⛔️    |                                                  Not required                                                   |
 |  GraphQL   |    ✅    |                                                     Working                                                     |
+|   Auth0    |    ✅    |                                                   Added Auth                                                    |
 
 ## Cool details:
 
