@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Challenge [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deploy it on **Vercel** 👆
+Or Check the existing one here:
+[https://backbone-challenge.vercel.app](https://backbone-challenge.vercel.app/contacts 'https://backbone-challenge.vercel.app')
 
-## Available Scripts
+## Philosophy
 
-In the project directory, you can run:
+- "Make it simple"
+- "Create a UI for the API"
+- "Be worried about how, and not what"
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+| _Feature _ | _Status_ |                                                   _Comments_                                                    |
+| :--------: | :------: | :-------------------------------------------------------------------------------------------------------------: |
+|    SSR     |    ✅    |                    data provided from server, not browser <br> perfect match between both 👌🏼                    |
+|    MUI     |    ✅    | added a full design system bassed<br> on a color schema <br> suppport for dark mode from user preferences 🌙 ☀️ |
+| Typescript |    ✅    |                                   100% typescipt coverage without any any 🥁                                    |
+| Storybook  |   ⛔️    |                                    no custom components added, not required                                     |
+|  Prettier  |    ✅    |                                              custom prettier rules                                              |
+|   Eslint   |    ✅    |                    custom eslint rules, no conflics using <br> **prettier eslint** in VScode                    |
+|     CD     |    ✅    |                                            **Vercel** implementation                                            |
+|    Jest    |    ✅    |                                              minimal jest coverage                                              |
+|   Redux    |    ⚠️    |                                               used recoil instead                                               |
+|   Recoil   |    ✅    |                                           Powerfull state manager 💪                                            |
+|    PWA     |   ⛔️    |                                         Not required for this challenge                                         |
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Cool details:
 
-### `npm test`
+- **All Components, variants sizes, rounds, and more are previously <br> handled by the design system, check all the setup here:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Design system](https://www.figma.com/file/MtBHPh5dbpvMKceYL3NYJW/MUI-for-Figma-v5.4.0---Material-UI?node-id=4662%3A14 'Design system')
 
-### `npm run build`
+|                                                                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![demo](https://i.ibb.co/Lk6RNJn/Screen-Shot-2022-05-04-at-0-39-49.png 'demo')](https://i.ibb.co/Lk6RNJn/Screen-Shot-2022-05-04-at-0-39-49.png 'demo') |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Server and browser render math after hydratation in all routes**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| _Server generated_                                                                                      | _Broser hydratation_                                                                                    |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [![server](https://i.ibb.co/jw8wGyb/result.png 'server')](https://i.ibb.co/jw8wGyb/result.png 'server') | [![server](https://i.ibb.co/jw8wGyb/result.png 'server')](https://i.ibb.co/jw8wGyb/result.png 'server') |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `/contacts` **route its a UI for you API, all your params can be used here**
+  for example:
+  `/contacts?&page=2&_sort=firstName:ASC`
+  `/contacts?perPage=10&page=1&firstName_contains=Rick`
 
-### `npm run eject`
+- **Redux** has been replaced by **Recoil**, if you are familiar with `useState` , then you will find it really easy to use/
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Vercel** testing and a couple `Test` to evaluated,code enforced using TS
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- and much **more** 😎

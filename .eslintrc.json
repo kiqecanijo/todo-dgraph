@@ -40,18 +40,18 @@
   "func-style": ["error", "expression"],
   "prefer-arrow-callback": "error",
   "react/display-name": "off",
-  "react-hooks/exhaustive-deps": [
-   "warn",
-   {
-    "additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
-   }
-  ],
   "prefer-arrow/prefer-arrow-functions": [
    "error",
    {
     "disallowPrototype": true,
     "singleReturnOnly": false,
     "classPropertiesAllowed": false
+   }
+  ],
+  "react-hooks/exhaustive-deps": [
+   "off",
+   {
+    "additionalHooks": "(useRecoilCallback|useRecoilTransaction_UNSTABLE)"
    }
   ]
  }
