@@ -27,11 +27,10 @@ import { TaskType } from './types'
 import { useRecoilState } from 'recoil'
 
 const Todo = () => {
-  const { user, isAuthenticated, loginWithPopup, isLoading } = useAuth0()
-
   const [userLocal, setUser] = useRecoilState(userState)
   const [notification, setNotification] = useRecoilState(notifyState)
   const [editableTask, setEditableTask] = useState<TaskType | null>(null)
+  const { user, isAuthenticated, loginWithPopup, isLoading } = useAuth0()
 
   const [addTask] = useMutation(ADD_TODO)
   const [deleteTask] = useMutation(DELETE_TODO)
